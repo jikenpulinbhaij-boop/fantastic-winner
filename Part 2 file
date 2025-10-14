@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Club Signup</title>
+</head>
+<body>
+
+    <h1>Join Our Book Club!</h1>
+    <p>Please fill out the form below to become a member.</p>
+
+    <form action="#">
+
+        <div>
+            <label for="fullName">Full Name:</label>
+            <input type="text" id="fullName" name="fullName" required>
+        </div>
+        <br>
+
+        <div>
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <br>
+
+        <fieldset>
+            <legend>Favorite Genres (select all that apply):</legend>
+            <div>
+                <input type="checkbox" id="fiction" name="genre" value="fiction">
+                <label for="fiction">Fiction</label>
+            </div>
+            <div>
+                <input type="checkbox" id="mystery" name="genre" value="mystery">
+                <label for="mystery">Mystery</label>
+            </div>
+            <div>
+                <input type="checkbox" id="sci-fi" name="genre" value="sci-fi">
+                <label for="sci-fi">Sci-Fi</label>
+            </div>
+            <div>
+                <input type="checkbox" id="non-fiction" name="genre" value="non-fiction">
+                <label for="non-fiction">Non-Fiction</label>
+            </div>
+            <div>
+                <input type="checkbox" id="other" name="genre" value="other">
+                <label for="other">Others</label>
+            </div>
+        </fieldset>
+        <br>
+
+        <fieldset>
+            <legend>How often do you read?</legend>
+            <div>
+                <input type="radio" id="daily" name="frequency" value="daily" required>
+                <label for="daily">Daily</label>
+            </div>
+            <div>
+                <input type="radio" id="weekly" name="frequency" value="weekly">
+                <label for="weekly">Weekly</label>
+            </div>
+            <div>
+                <input type="radio" id="occasionally" name="frequency" value="occasionally">
+                <label for="occasionally">Occasionally</label>
+            </div>
+            <div>
+                <input type="radio" id="Monthly" name="frequency" value="Monthly">
+                <label for="occasionally">Monthly</label>
+            </div>
+        </fieldset>
+        <br>
+
+        <div>
+            <label for="favAuthor">Favorite Author:</label>
+            <input type="text" id="favAuthor" name="favAuthor">
+        </div>
+        <br>
+
+        <div>
+            <label for="whyReading">Why do you love reading?</label>
+            <br>
+            <textarea id="whyReading" name="whyReading" rows="5" cols="40" placeholder="Tell us in a few sentences..."></textarea>
+        </div>
+        <br>
+
+        <input type="submit" value="Join Now">
+
+    </form>
+
+</body>
+</html>
