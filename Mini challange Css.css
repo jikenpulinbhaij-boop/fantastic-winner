@@ -1,0 +1,77 @@
+/* Reset default margin/padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body background */
+body {
+    background-color: #f2e5d5; /* light beige */
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container centers the card */
+.menu-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Menu card styling */
+.menu-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 280px;
+    overflow: hidden;
+    transition: transform 0.2s ease-in-out;
+}
+
+.menu-card:hover {
+    transform: scale(1.02);
+}
+
+/* Image styling */
+.menu-image {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+}
+
+/* Flexbox for text and price alignment */
+.menu-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 12px 16px;
+}
+
+/* Text section */
+.text-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.item-name {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #222;
+}
+
+.item-desc {
+    font-size: 0.85rem;
+    color: #555;
+    margin-top: 4px;
+}
+
+/* Price section */
+.item-price {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #000;
+}
